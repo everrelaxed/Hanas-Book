@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Day Written for Hana — Happy Birthday</title>
+  <meta name="description" content="A little corner of the internet created just for you on your special day. Every memory, every wish, and every word was gathered with love." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Literata:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR NAVIGATION ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo-icon">📖</span>
+      <div>
+        <div class="sidebar-title">Hana's Book</div>
+        <div class="sidebar-subtitle">Chapter Navigation</div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#welcome" class="sidebar-link active" id="nav-welcome" onclick="navigateTo('welcome')">
+        <span class="sidebar-icon">📖</span> Welcome
+      </a>
+      <a href="#countdown" class="sidebar-link" id="nav-countdown" onclick="navigateTo('countdown')">
+        <span class="sidebar-icon">⏰</span> Countdown
+      </a>
+      <a href="#letter" class="sidebar-link" id="nav-letter" onclick="navigateTo('letter')">
+        <span class="sidebar-icon">✉️</span> The Letter
+      </a>
+      </a>
+      <a href="#appreciation" class="sidebar-link" id="nav-appreciation" onclick="navigateTo('appreciation')">
+        <span class="sidebar-icon">❤️</span> Appreciation
+      </a>
+      <a href="#messages" class="sidebar-link" id="nav-messages" onclick="navigateTo('messages')">
+        <span class="sidebar-icon">💬</span> Message Wall
+      </a>
+      <a href="#wishcatcher" class="sidebar-link" id="nav-wishcatcher" onclick="navigateTo('wishcatcher')">
+        <span class="sidebar-icon">🦋</span> Wish Catcher
+      </a>
+      </a>
+      <a href="#celebration" class="sidebar-link" id="nav-celebration" onclick="navigateTo('celebration')">
+        <span class="sidebar-icon">🎉</span> Celebration
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ===== MOBILE SIDEBAR TOGGLE ===== -->
+  <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content">
+
+    <!-- ===== TOP NAVBAR ===== -->
+    <header class="topnav" id="topnav">
+      <div class="topnav-brand">A Day Written for Hana</div>
+      <nav class="topnav-links">
+        <a href="#" onclick="navigateTo('messages')">Memories</a>
+        <a href="#" onclick="navigateTo('wishcatcher')">Wishes</a>
+        <a href="#" onclick="navigateTo('celebration')" class="btn-celebrate">Celebrate</a>
+      </nav>
+    </header>
+
+    <!-- ===== SECTION: WELCOME ===== -->
+    <section class="page-section" id="welcome">
+      <div class="welcome-page">
+        <div class="paper-texture"></div>
+        <div class="decorative-dots">
+          <span class="dot dot-1">✦</span>
+          <span class="dot dot-2">✦</span>
+          <span class="dot dot-3">✦</span>
+          <span class="dot dot-4">✦</span>
+        </div>
+
+        <div class="welcome-polaroid" aria-hidden="true">
+          <img src="images/rose_sketch.png" alt="Rose sketch" />
+        </div>
+
+        <div class="welcome-content">
+          <p class="welcome-kicker"><em>The beginning of a chapter...</em></p>
+          <h1 class="welcome-title">Happy Birthday Hana 🌷</h1>
+          <p class="welcome-body">A little corner of the internet created just for you on your special day. Every memory, every wish, and every word was gathered with love.</p>
+          <button class="btn-primary" onclick="navigateTo('countdown')">
+            Open Your Birthday Story <span class="btn-arrow">→</span>
+          </button>
+          <div class="welcome-icons">
+            <span>♡</span>
+            <span>📖</span>
+            <span>✦</span>
+          </div>
+        </div>
+
+        <div class="scroll-hint">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll to Reveal</span>
+          <span class="scroll-line"></span>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">Made Especially For Hana</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#messages">Contact</a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ===== SECTION: COUNTDOWN ===== -->
+    <section class="page-section hidden" id="countdown">
+      <div class="countdown-page">
+        <div class="paper-texture"></div>
+        <div class="butterfly-deco" aria-hidden="true">
+          <span class="butterfly b1">🦋</span>
+          <span class="butterfly b2">🦋</span>
+          <span class="butterfly b3">🦋</span>
+          <span class="butterfly b4">🦋</span>
+        </div>
+
+        <div class="countdown-polaroid">
+          <img src="images/birthday_cake_candle.png" alt="Birthday cake" />
+          <div class="polaroid-caption">12 June 2010</div>
+        </div>
+
+        <div class="countdown-content">
+          <h2 class="section-title">The Day Has Arrived ✨</h2>
+          <div class="big-date">12 June</div>
+          <div class="date-caption">BIRTHDAY REACHED</div>
+          <p class="countdown-body">After 365 days of adventures, laughter, lessons, and memories, your special day is finally here.</p>
+          <div class="fairy-divider" aria-hidden="true">
+            <span class="fairy-node"></span>
+            <span class="fairy-line"></span>
+            <span class="fairy-node fairy-node--bright"></span>
+            <span class="fairy-line"></span>
+            <span class="fairy-node"></span>
+          </div>
+          <button class="btn-primary btn-caps" onclick="navigateTo('letter')">OPEN YOUR BOOK →</button>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">Made Especially For Hana</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#messages">Contact</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ===== SECTION: THE LETTER ===== -->
+    <section class="page-section hidden" id="letter">
+      <div class="letter-page">
+        <div class="paper-texture paper-texture--light"></div>
+        <div class="sparkle-deco" aria-hidden="true">
+          <span class="sparkle s1">✦</span>
+          <span class="sparkle s2">✦</span>
+          <span class="sparkle s3">✦</span>
+          <span class="sparkle s4">✦</span>
+          <span class="sparkle s5">✦</span>
+        </div>
+
+        <p class="chapter-label">CHAPTER THREE</p>
+        <h2 class="letter-title">Dear Hana,</h2>
+        <p class="letter-sub">Click to read the message</p>
+
+        <div class="envelope-container" id="envelopeContainer">
+          <div class="envelope" id="envelope" onclick="openEnvelope()">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap" id="envelopeFlap"></div>
+            <div class="envelope-body">
+              <div class="letter-content" id="letterContent">
+                <p>To Hana,</p>
+                <p>Thank you for the conversations, the laughs that you shared this year. May this next chapter bring you happiness, love, purpose, and countless reasons to smile.</p>
+                <p>Happy Birthday, Hana.</p>
+                <div class="letter-signature">WITH BEST WISHES 🌸</div>
+              </div>
+            </div>
+          </div>
+          <div class="letter-polaroid-corner">
+            <img src="images/rose_sketch.png" alt="Flower" />
+          </div>
+        </div>
+
+        <div class="letter-quote-divider">
+          <span class="divider-line"></span>
+        </div>
+        <p class="letter-quote"><em>"Every page turned is a memory earned."</em></p>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">MADE ESPECIALLY FOR HANA</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#messages">Contact</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </footer>
+    </section>
+
+    
+
+    <!-- ===== SECTION: APPRECIATION ===== -->
+    <section class="page-section hidden" id="appreciation">
+      <div class="appreciation-page">
+        <div class="paper-texture"></div>
+        <div class="butterfly-deco-corner" aria-hidden="true">🦋</div>
+
+        <h2 class="appreciation-title">A Few Things We Appreciate About You</h2>
+        <div class="gallery-heart-divider">
+          <span class="divider-line-thin"></span>
+          <span>♡</span>
+          <span class="divider-line-thin"></span>
+        </div>
+
+        <div class="appreciation-grid">
+          <div class="appreciation-card">
+            <div class="washi-tape washi-top washi-small"></div>
+            <span class="appreciation-icon">🌷</span>
+            <h3 class="appreciation-trait">Your kindness</h3>
+            <p class="appreciation-text">You have a way of making everyone feel seen and heard, Hana. Your gentle nature is a gift to us all.</p>
+          </div>
+          <div class="appreciation-card">
+            <div class="washi-tape washi-top washi-small washi-right"></div>
+            <span class="appreciation-icon">🦋</span>
+            <h3 class="appreciation-trait">Your positivity</h3>
+            <p class="appreciation-text">Even on cloudy days, you manage to find the silver lining. Your optimism is truly contagious.</p>
+          </div>
+          <div class="appreciation-card">
+            <div class="washi-tape washi-top washi-small"></div>
+            <span class="appreciation-icon">🌷</span>
+            <h3 class="appreciation-trait">Your determination</h3>
+            <p class="appreciation-text">The way you pursue your goals with quiet strength inspires everyone around you to keep going.</p>
+          </div>
+          <div class="appreciation-card">
+            <div class="washi-tape washi-top washi-small washi-right"></div>
+            <span class="appreciation-icon">🦋</span>
+            <h3 class="appreciation-trait">Your sense of humor</h3>
+            <p class="appreciation-text">Thank you for the laughter, the inside jokes, and for never taking life too seriously when it matters.</p>
+          </div>
+        </div>
+
+        <div class="appreciation-card appreciation-card--wide">
+          <div class="washi-tape washi-top washi-wide"></div>
+          <span class="appreciation-icon">🌷</span>
+          <h3 class="appreciation-trait">Your ability to make ordinary moments enjoyable</h3>
+          <p class="appreciation-text">It's the little things, Hana. A walk in the park or a quiet coffee becomes a cherished memory because of you.</p>
+        </div>
+
+        <div class="fairy-divider fairy-divider--sm" aria-hidden="true">
+          <span class="fairy-node"></span>
+          <span class="fairy-line"></span>
+          <span class="fairy-node fairy-node--bright"></span>
+          <span class="fairy-line"></span>
+          <span class="fairy-node fairy-node--dim"></span>
+          <span class="fairy-line"></span>
+          <span class="fairy-node"></span>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">Made Especially For Hana</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#messages">Contact</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </footer>
+    </section>
+
+    <!-- ===== SECTION: MESSAGES WALL ===== -->
+    <section class="page-section hidden" id="messages">
+      <div class="messages-page">
+        <div class="paper-texture"></div>
+        <div class="sidebar-avatar-area">
+          <div class="avatar-circle">👤</div>
+        </div>
+
+        <h2 class="messages-title">Messages For Hana</h2>
+        <p class="messages-sub"><em>A collection of hearts and whispers...</em></p>
+
+        <div class="messages-grid" id="messagesGrid">
+          <div class="message-card">
+            <div class="quote-mark">"</div>
+            <p class="message-text">May this year bring opportunities that make you proud.</p>
+            <span class="message-icon">♡</span>
+          </div>
+          <div class="message-card message-card--alt">
+            <div class="washi-tape washi-top washi-small"></div>
+            <p class="message-text">Wishing you happiness in every chapter ahead.</p>
+            <span class="message-icon">✦</span>
+          </div>
+          <div class="message-card">
+            <div class="quote-mark">"</div>
+            <p class="message-text">May your smile stay as bright as ever.</p>
+            <span class="message-icon">☆</span>
+          </div>
+          <div class="message-card message-card--alt">
+            <div class="washi-tape washi-top washi-small"></div>
+            <p class="message-text">Hope 12 June becomes the beginning of an amazing year.</p>
+            <div class="message-from">STAY BLESSED</div>
+            <span class="message-icon">🦋</span>
+          </div>
+        </div>
+
+        <div class="fairy-divider" aria-hidden="true">
+          <span class="fairy-node"></span>
+          <span class="fairy-line"></span>
+          <span class="fairy-node fairy-node--bright"></span>
+          <span class="fairy-line"></span>
+          <span class="fairy-node fairy-node--dim"></span>
+          <span class="fairy-line"></span>
+          <span class="fairy-node"></span>
+        </div>
+
+        <!-- Leave a Note -->
+        <div class="leave-note-section">
+          <div class="note-photo-side">
+            <div class="polaroid-card">
+              <img src="images/flowers_cake_moment.png" alt="Capturing the moment" class="gallery-img" />
+              <p class="polaroid-label">CAPTURING THE MOMENT</p>
+            </div>
+          </div>
+          <div class="note-form-side">
+            <h3 class="note-title">Leave a Note</h3>
+            <p class="note-desc">Add your own piece to Hana's digital scrapbook. Every word is a thread in the tapestry of her story.</p>
+            <form class="note-form" id="noteForm" onsubmit="submitNote(event)">
+              <div class="form-field">
+                <label class="field-label" for="noteName">YOUR NAME</label>
+                <input type="text" id="noteName" class="field-input" placeholder="Your Name" required />
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="noteMessage">YOUR MESSAGE</label>
+                <textarea id="noteMessage" class="field-input field-textarea" placeholder="Your message for Hana..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-small">Post Memory</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">A DAY WRITTEN FOR HANA</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+        </nav>
+        <p class="footer-copy">Made Especially For Hana</p>
+      </footer>
+    </section>
+
+    <!-- ===== SECTION: WISH CATCHER ===== -->
+    <section class="page-section hidden" id="wishcatcher">
+      <div class="wishcatcher-page">
+        <div class="paper-texture"></div>
+        <div class="butterfly-field" id="butterflyField" aria-label="Interactive butterfly field">
+        </div>
+
+        <div class="wishcatcher-content">
+          <p class="chapter-label">INTERACTIVE MOMENT</p>
+          <h2 class="wishcatcher-title">Catch a Butterfly</h2>
+          <p class="wishcatcher-body">Hana, the air is filled with delicate wishes today. Tap the floating butterflies to release the blessings they carry for your journey ahead.</p>
+          <div class="fairy-divider" aria-hidden="true">
+            <span class="fairy-node"></span>
+            <span class="fairy-line"></span>
+            <span class="fairy-node fairy-node--bright"></span>
+            <span class="fairy-line"></span>
+            <span class="fairy-node"></span>
+          </div>
+        </div>
+
+        <div class="wishes-counter" id="wishesCounter">
+          <div class="counter-label">Wishes Caught</div>
+          <div class="counter-num" id="counterNum">0</div>
+        </div>
+
+        <div class="wish-popup hidden" id="wishPopup"></div>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">Made Especially For Hana</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </footer>
+    </section>
+
+
+
+    <!-- ===== SECTION: CELEBRATION ===== -->
+    <section class="page-section hidden" id="celebration">
+      <div class="celebration-page">
+        <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+        <div class="paper-texture paper-texture--warm"></div>
+
+        <div class="butterfly-deco" aria-hidden="true">
+          <span class="butterfly b1">🦋</span>
+          <span class="butterfly b2">🦋</span>
+        </div>
+
+      
+        <h2 class="celebration-title">Happy Birthday Hana 🎂 🦋</h2>
+        <p class="celebration-quote">
+"There are people who walk into your life and quietly become the reason everything changes — you are that person for me."
+I don't always find the right words, and sometimes what I feel is too deep to just say out loud — but today, on your birthday, I want you to know this: I genuinely believe I am one of the lucky ones, because not everyone gets to meet someone like you in their lifetime. You didn't just walk into my life — you became one of its most important turning points. Because of you, I became a better version of myself, and that is something I will carry with me, always. Today and every day, I wish you nothing but pure, unshakeable happiness — the kind you so effortlessly brought into my world. And no matter what road you walk ahead, no matter what storms or obstacles find their way to you — I want you to know, without any doubt, that I am here. Not behind you, not ahead of you — just right beside you, as a friend who genuinely means every word of this. You deserve all the beautiful things life has to offer. Happy Birthday 🎂."</p>
+
+        <button class="btn-primary btn-large btn-caps" onclick="navigateTo('welcome')">Replay The Birthday Story 🎉</button>
+
+        <div class="gallery-heart-divider">
+          <span class="divider-line-thin"></span>
+          <span>♡</span>
+          <span class="divider-line-thin"></span>
+        </div>
+
+        <div class="guest-of-honor">
+          <div class="goh-avatar">🌸</div>
+          <div>
+            <div class="goh-name">Hana</div>
+            <div class="goh-title"><em>The Guest of Honor</em></div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="section-footer">
+        <p class="footer-tagline">Made Especially For Hana • 12 June 🌷</p>
+        <nav class="footer-links">
+          <a href="#">Credits</a>
+          <a href="#messages">Contact</a>
+          <a href="#">Privacy</a>
+        </nav>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
